@@ -27,7 +27,7 @@ server.get("/create-point",(req, res) => {
 })
 
 server.get("/search",(req, res) => {
-    const search = req.query.search
+    const search = req.query.city
 
     if(search == "") {
         //Pesquisa vazia
@@ -35,7 +35,7 @@ server.get("/search",(req, res) => {
     }
     
     // Consultar dados
-    db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(err,rows){
+    db.all(`SELECT * FROM places WHERE city = '${search}'`, function(err,rows){
         if(err) return console.log(err)
         const total = rows.length
 

@@ -5,13 +5,26 @@
             <a href="#">Fechar</a>
         </div>
         <form action="/search">
+            <label for="searchState">Estado</label>
+            <div class="search field">
+                <select name="uf" id="" required="required">
+                    <option value="">Selecione o Estado</option>
+                </select>
+            </div>
+            
+            {# <div class="search field">
+                <input placeholder="Pesquise seu estado" type="text" name="searchState">
+            </div> #}
             <label for="search">Cidade</label>
             <div class="search field">
-                <input placeholder="Pesquise por cidade" type="text" name="search">
-                <button>
-                    <img src="/assets/search.svg" alt="">
-                </button>
+                <select name="city" disabled="disabled" required="required">
+                    <option value="">Selecione a Cidade</option>
+                </select>
             </div>
+            <input type="hidden" name="state">
+            <button>
+                <strong>Buscar</strong>
+            </button>
         </form>
     </div>
 </div>

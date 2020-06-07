@@ -50,28 +50,40 @@
 
 #modal form .field {
     display: flex;
+    height: 72px;
 }
 
-#modal form input {
+#modal form select {
     flex: 1;
     background-color: #f0f0f5;
-    border-radius: 8px 0 0 8px;
+    border-radius:8px;
     border: 0;
     padding: 16px 24px;
     font-size: 16px;
     color: #6c6c80;
+    margin-bottom: 10px;
     outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #modal form button {
-    width: 72px;
-    height: 72px;
-
+    height: 65px;
     background-color: var(--primary-color);
     border: 0;
-    border-radius: 0 8px 8px 0;
-    outline: none;
+    border-radius:8px;
+    outline: var(--primary-color);
     transition: background 400ms;
+    width: 420px;
+    margin-top: 5px;
+}
+
+#modal form button strong {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #modal form .boxShadow{
@@ -81,6 +93,9 @@
 #modal form button:hover {
     background-color: #2fb85e;
 }
+
+
+
 /* POINT CREATED */
 #modal.point .content{
     display: flex;

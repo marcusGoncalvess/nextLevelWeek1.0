@@ -1,12 +1,24 @@
-function addBoxShadow() {
-    search.classList.add("boxShadow")
-    btn.classList.add("boxShadow")
+function addBoxShadowState() {
+    searchState.classList.add("boxShadow")
 }
-function removeBoxShadow() {
-    search.classList.remove("boxShadow")
-    btn.classList.remove("boxShadow")
+function addBoxShadowCity() {
+    searchCity.classList.add("boxShadow")
 }
-let search = document.querySelector("#modal form input")
+
+function removeBoxShadowState() {
+    searchState.classList.remove("boxShadow")
+}
+
+function removeBoxShadowCity() {
+    searchCity.classList.remove("boxShadow")
+}
+
+let searchState = document.querySelector("#modal form select[name=uf]")
+let searchCity = document.querySelector("#modal form select[name=city]")
 let btn = document.querySelector("#modal form button")
-search.addEventListener("focus", addBoxShadow)
-search.addEventListener("blur", removeBoxShadow)
+
+searchState.addEventListener("focus", addBoxShadowState)
+searchState.addEventListener("blur", removeBoxShadowState)
+
+searchCity.addEventListener("focus", addBoxShadowCity)
+searchCity.addEventListener("blur", removeBoxShadowCity)
