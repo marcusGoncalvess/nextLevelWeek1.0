@@ -1,0 +1,10 @@
+@media (max-width: 900px){
+    
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .cards img {
+        height: 250px;
+    }
+}

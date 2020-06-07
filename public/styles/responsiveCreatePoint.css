@@ -1,0 +1,82 @@
+@media (max-width: 900px) {
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+    #page-create-point .field-group .field + .field{
+        margin-left: 0;
+    }
+}
+@media (max-width: 690px) {
+    #page-create-point form h1 {
+        font-size: 30px;
+    }
+    #page-create-point form h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .items-grid{ 
+        grid-template-columns: 1fr 1fr;
+    }
+    form button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #page-create-point form h1 {
+        font-size: 20px;
+    }
+    #page-create-point form h2 {
+        font-size: 14px;
+    }
+    #page-create-point form label {
+        font-size: 10px;
+    }
+    #page-create-point form span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .items-grid{ 
+        grid-template-columns: 1fr;
+    }
+    form input,select {
+        width: 60vw;
+    }
+    form .field{
+        align-items: center;
+    }
+    form .field label {
+        text-align: start;
+        width: 60vw;
+    }
+    form legend {
+        display: block;
+    }
+    #page-create-point header{
+        display: block;
+    }
+    #page-create-point header img{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #page-create-point header a{
+        display: flex;
+        margin-left:auto;
+        margin-right:auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 380px){
+    form button {
+        width: 100%;
+    }
+}
