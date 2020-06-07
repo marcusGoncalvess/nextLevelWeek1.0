@@ -109,8 +109,11 @@
     {% endblock content %}
 
     {% block modal %}
-        {% if saved == true %}
+        {% if saved %}
             {% include "partials/point-created.html" %}
+        {% endif %}
+        {% if saved == false %}
+            {% include "partials/point-createdError.html" %} 
         {% endif %}
     {% endblock modal %}
  

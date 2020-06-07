@@ -23,7 +23,7 @@ server.get("/",(req, res) => {
 })
 
 server.get("/create-point",(req, res) => {
-    return res.render("create-point.html",{saved: false})
+    return res.render("create-point.html")
 })
 
 server.get("/search",(req, res) => {
@@ -67,7 +67,7 @@ server.post("/savepoint",(req,res) => {
         req.body.items
     ]
     db.run(query, values, function(err){
-        if(err) return res.send("Erro no cadastro!") 
+        if(err) return res.render("create-point.html", {saved:false})
         return res.render("create-point.html", {saved: true})
     })
 
