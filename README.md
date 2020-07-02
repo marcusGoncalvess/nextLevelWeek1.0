@@ -55,7 +55,7 @@ então coloquei um gif de loading ao lado do input. (esse loading também funcio
 ![alt text](./gitReadme/modalError.png)
 <p> E claro, se não for possível realizar a inserção do dado no database! </p>
 
-# 🚀 Tecnologias
+# 🚀 Tecnologias 
 
 <li><strong>HTML & CSS</strong></li>
 <li><strong>JavaScript</strong></li>
